@@ -12,7 +12,7 @@ int main()
 {
 
     int n;
-    printf("Enter the size of array: ");
+    printf("Enter the length of array: ");
     scanf("%d", &n);
 
     int arr[n];
@@ -24,7 +24,7 @@ int main()
     }
 
     int max = arr[0], smax = arr[0];
-    
+
     for (int i = 0; i < n; i++)
     {
         if (arr[i] > max)

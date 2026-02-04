@@ -13,7 +13,7 @@ int main()
 {
 
     int n, x = 6, count = 0;
-    printf("Enter the size of array: ");
+    printf("Enter the length of array: ");
     scanf("%d", &n);
 
     int arr[n];

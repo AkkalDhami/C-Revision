@@ -27,7 +27,7 @@ int main()
 {
 
     int n;
-    printf("Enter the size of array: ");
+    printf("Enter the length of array: ");
     scanf("%d", &n);
 
     int arr[n];
@@ -46,7 +46,7 @@ int main()
     {
         printf("%d, ", arr[i]);
     }
-    
+
     reverse(arr, 0, n);
     reverse(arr, 0, k);
     reverse(arr, k, n);

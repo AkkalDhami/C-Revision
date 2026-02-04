@@ -35,7 +35,7 @@ int main()
 {
 
     int n;
-    printf("Enter the size of array: ");
+    printf("Enter the length of array: ");
     scanf("%d", &n);
 
     int arr[n];

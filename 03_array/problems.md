@@ -1,5 +1,3 @@
-@ -1,136 +0,0 @@
-
 # Array Problems
 
 ## Basics Problems
@@ -152,3 +150,12 @@
 
     output: 
     5, 6, 1, 2, 3, 4
+
+## 19. Moves all zeroes to the end of the array
+
+`Maintain the order`
+
+    int arr[5] = {0, 1, 0, 3, 12};
+    
+    output:
+    1, 3, 12, 0, 0

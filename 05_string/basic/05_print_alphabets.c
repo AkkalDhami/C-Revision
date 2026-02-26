@@ -6,13 +6,13 @@ void printAlphabet()
     printf("Uppercase alphabets:\n");
     for (int i = 65; i <= 90; i++)
     {
-        printf("%c, ", (char)i);
+        printf("%c-%d ", (char)i, i);
     }
     //? A:65, Z:90
     printf("\nLowercase alphabets:\n");
     for (int i = 97; i <= 122; i++)
     {
-        printf("%c, ", (char)i);
+        printf("%c-%d, ", (char)i, i);
     }
 }
 

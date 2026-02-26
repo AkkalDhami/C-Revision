@@ -3,32 +3,30 @@
 
 int main()
 {
-    char c[2];
+    char ch;
     printf("Enter a character: ");
-    scanf("%c", c);
+    scanf(" %c", &ch);
 
-    switch ((int)c)
+    switch (ch)
     {
-    case 65:
-        printf("Vowel character - %d", (int)c);
-        break;
-    case 69:
-        printf("Vowel character");
-        break;
-    case 73:
-        printf("Vowel character");
-        break;
-    case 79:
-        printf("Vowel character");
-        break;
-    case 85:
-        printf("Vowel character");
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+    case 'A':
+    case 'E':
+    case 'I':
+    case 'O':
+    case 'U':
+        printf("%c is a vowel character.\n", ch);
         break;
 
     default:
-        printf("Consonant character");
-        break;
+        if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+            printf("It is a consonant character.\n", ch);
+        else
+            printf("It is not an alphabet character.\n");
     }
-
     return 0;
 }

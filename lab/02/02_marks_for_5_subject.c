@@ -38,6 +38,5 @@ int main()
         printf("Invalid percentage!");
     }
 
-    printf("Program executed by Akkal Dhami\n");
     return 0;
 }

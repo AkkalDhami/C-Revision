@@ -10,7 +10,7 @@ int main() {
             scanf("%d", &m[i][j]);
         }
     }
-    printf("Transpose:\n");
+    printf("Transpose matrix:\n");
     for (int i = 0; i < c; i++) {
         for (int j = 0; j < r; j++) {
             printf("%d\t", m[j][i]);

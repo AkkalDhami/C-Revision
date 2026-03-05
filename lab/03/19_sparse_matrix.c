@@ -2,7 +2,7 @@
 /* 19. Write a program to check whether a given matrix is a sparse matrix(more zeros than non-zeros). */
 int main() {
     int r, c, zeros = 0;
-    printf("Enter rows and columns: ");
+    printf("Enter rows and cols: ");
     scanf("%d %d", &r, &c);
     int m[r][c];
     for (int i = 0; i < r; i++) {

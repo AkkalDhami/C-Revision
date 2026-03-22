@@ -18,16 +18,10 @@ typedef struct
     float totalMarks;
 } S;
 
-
 int main()
 {
     int n = 2;
     S e[n];
-
-    for (int i = 0; i < n; i++)
-    {
-        e[i].totalMarks = 0;
-    }
 
     for (int i = 0; i < n; i++)
     {
@@ -48,12 +42,17 @@ int main()
     {
 
         float perc = (e[i].totalMarks / FULL_MARKS) * 100;
+        if (perc > 100)
+        {
+            printf("Invalid percentage\n");
+            break;
+        }
 
         printf("\nStudent Details:\n");
 
         printf("Name: %s\n", e[i].name);
         printf("Rollno: %d\n", e[i].rollNo);
-        printf("Percentage: %.3f%\n", perc);
+        printf("Percentage: %.3f\n", perc);
         printf("Total marks out of %d: %.2f\n", FULL_MARKS, e[i].totalMarks);
 
         for (int j = 0; j < 2; j++)

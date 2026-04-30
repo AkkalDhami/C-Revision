@@ -3,7 +3,7 @@
 
 void printDetails() {
     printf("Name: Akkal Dhami\n");
-    printf("College: Example College\n");
+    printf("College: Himalaya College\n");
 }
 
 int main() {

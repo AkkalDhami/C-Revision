@@ -7,7 +7,7 @@ float calculateSI(float p, float t, float r) {
 
 int main() {
     float p, t, r;
-    printf("Enter Principal, Time and Rate: ");
+    printf("Enter Principal, Time and Rate\n");
     scanf("%f %f %f", &p, &t, &r);
     printf("Simple Interest: %.2f\n", calculateSI(p, t, r));
     return 0;

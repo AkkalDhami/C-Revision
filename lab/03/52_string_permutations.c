@@ -18,7 +18,7 @@ int main() {
         }
     }
     while (1) {
-        printf("%s\n", str);
+        printf("%s, ", str);
         int i = n - 2;
         while (i >= 0 && str[i] >= str[i + 1]) i--;
         if (i < 0) break;

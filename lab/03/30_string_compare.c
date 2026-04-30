@@ -3,9 +3,9 @@
 int main() {
     char s1[100], s2[100];
     int i = 0, diff = 0;
-    printf("Enter first string: ");
+    printf("Enter 1st string: ");
     scanf(" %[^\n]", s1);
-    printf("Enter second string: ");
+    printf("Enter 2nd string: ");
     scanf(" %[^\n]", s2);
     while (s1[i] != '\0' || s2[i] != '\0') {
         if (s1[i] != s2[i]) {

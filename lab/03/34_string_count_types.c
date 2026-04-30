@@ -10,6 +10,6 @@ int main() {
         else if (str[i] == ' ') s++;
         else if (!((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'))) sp++;
     }
-    printf("Digits: %d, Spaces: %d, Special Characters: %d\n", d, s, sp);
+    printf("Digits: %d, Spaces: %d\nSpecial Characters: %d\n", d, s, sp);
     return 0;
 }

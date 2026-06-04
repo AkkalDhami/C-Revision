@@ -53,5 +53,9 @@ int main()
     //* prev node data
     printList2(third);
 
+    free(first);
+    free(second);
+    free(third);
+
     return 0;
 }

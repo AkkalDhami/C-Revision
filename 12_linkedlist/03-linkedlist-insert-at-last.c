@@ -17,11 +17,14 @@ void printList(Node *n)
     printf("NULL\n");
 }
 
-Node *insertAtStart(Node *head, int data)
+Node *insertAtLast(Node *last, int data)
 {
     Node *newNode = (Node *)malloc(sizeof(Node));
+    last->next = newNode;
+
     newNode->data = data;
-    newNode->next = head;
+    newNode->next = NULL;
+
     return newNode;
 }
 
@@ -31,6 +34,7 @@ int main()
     Node *first = (Node *)malloc(sizeof(Node));
     Node *second = (Node *)malloc(sizeof(Node));
     Node *third = (Node *)malloc(sizeof(Node));
+    Node *last = (Node *)malloc(sizeof(Node));
 
     first->data = 10;
     first->next = second;
@@ -39,14 +43,18 @@ int main()
     second->next = third;
 
     third->data = 30;
-    third->next = NULL;
+    third->next = last;
+
+    last->data = 40;
+    last->next = NULL;
 
     printf("Linked List before insertion:\n");
     printList(first);
 
-    first = insertAtStart(first, 5);
+    last = insertAtLast(last, 5);
+    last = insertAtLast(last, 6);
 
-    printf("\nLinked List after insertion at first:\n");
+    printf("\nLinked List after insertion at last:\n");
     printList(first);
 
     return 0;
@@ -56,8 +64,8 @@ int main()
 ? Time Complexity
 *-------------------
 
-* Insertion at first:
-* O(1)
+* Insertion at last:
+* O(n)
 
 * Traversal:
 * O(n)
